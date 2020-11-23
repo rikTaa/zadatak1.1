@@ -13,7 +13,7 @@ var matrix = [
 
 var val1 = document.getElementById("f1"),
   val2 = document.getElementById("f2"),
-  left = 0,
+  left = 1,
   right = -1,
   selected,
   leftN,
