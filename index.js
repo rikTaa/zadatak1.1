@@ -28,31 +28,50 @@ var val1 = document.getElementById("f1"),
 
 function set() {
   selected = matrix[val1.value][val2.value];
-  p3.innerHTML = "Selected: " + selected;
 
   leftN = matrix[val1.value][val2.value - left] || 0;
-  p4.innerHTML = "Left: " + leftN;
 
   rightN = matrix[val1.value][val2.value - right] || 0;
-  p5.innerHTML = "Right: " + rightN;
 
   topN = matrix[val1.value - left][val2.value] || 0;
-  p6.innerHTML = "Top: " + topN;
 
   topRight = matrix[val1.value - left][val2.value - right] || 0;
-  p8.innerHTML = "Top right: " + topRight;
 
   topLeft = matrix[val1.value - left][val2.value - left] || 0;
-  p7.innerHTML = "Top left: " + topLeft;
 
   botN = matrix[val1.value - right][val2.value] || 0;
-  p9.innerHTML = "Bottom: " + botN;
 
   botRight = matrix[val1.value - right][val2.value - right] || 0;
-  p10.innerHTML = "Bottom right: " + botRight;
 
   botLeft = matrix[val1.value - right][val2.value - left] || 0;
-  p11.innerHTML = "Bottom left: " + botLeft;
+
+  p3.innerHTML =
+    "Selected: " +
+    selected +
+    "<br/>" +
+    "Left: " +
+    leftN +
+    "<br/>" +
+    "Right: " +
+    rightN +
+    "<br/>" +
+    "Top: " +
+    topN +
+    "<br/>" +
+    "Top right: " +
+    topRight +
+    "<br/>" +
+    "Top left: " +
+    topLeft +
+    "<br/>" +
+    "Bottom: " +
+    botN +
+    "<br/>" +
+    "Bottom right: " +
+    botRight +
+    "<br/>" +
+    "Bottom left: " +
+    botLeft;
 
   sum =
     selected +
