@@ -13,7 +13,7 @@ var matrix = [
 
 var val1 = document.getElementById("f1"),
   val2 = document.getElementById("f2"),
-  left = 1,
+  left = 0,
   right = -1,
   selected,
   leftN,
@@ -25,10 +25,6 @@ var val1 = document.getElementById("f1"),
   botRight,
   botLeft,
   sum;
-
-if (matrix[val1.value] === undefined || matrix[val1.value] < 0) {
-  topN = 0;
-}
 
 function set() {
   selected = matrix[val1.value][val2.value];
